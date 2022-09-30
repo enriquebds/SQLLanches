@@ -34,4 +34,11 @@ WHERE
 
 -- 4)
 
+SELECT sum(pr.preco) sum FROM produtos_pedidos pp
+	 INNER JOIN produtos pr ON pp.produto_id = pr.id 
+     INNER JOIN pedidos p ON pp.pedido_id = p.id 
+     INNER JOIN clientes c ON p.cliente_id = c.id
+WHERE 
+	c.nome = 'Laura';
+
 -- 5)
