@@ -17,7 +17,7 @@ FROM produtos_pedidos pp
 
 -- 2)
 
-SELECT p.id id_pr_frita FROM produtos_pedidos pp
+SELECT p.id id FROM produtos_pedidos pp
 	INNER JOIN produtos pr ON pp.produto_id = pr.id
     INNER JOIN pedidos p ON pp.pedido_id = p.id
 WHERE 
