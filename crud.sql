@@ -12,7 +12,6 @@ VALUES
 
 -- 2)
 
-
 INSERT INTO pedidos 
     (status, cliente_id)
 VALUES
