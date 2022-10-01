@@ -42,3 +42,10 @@ WHERE
 	c.nome = 'Laura';
 
 -- 5)
+
+SELECT pr.nome, COUNT(pr.id) FROM produtos_pedidos pp 
+    INNER JOIN produtos pr ON pp.produto_id = pr.id 
+    INNER JOIN pedidos p ON pp.pedido_id = p.id
+GROUP BY pr.id
+    HAVING COUNT(*) > 0
+    ORDER BY pr.nome;
