@@ -5,7 +5,10 @@
 
 -- 1)
 
-
+INSERT INTO clientes
+    (nome, lealdade)
+    VALUES
+        ('Georgia', 0);
 
 -- 2)
 
