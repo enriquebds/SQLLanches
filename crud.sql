@@ -32,7 +32,11 @@ VALUES
 
 -- 1)
 
-
+SELECT c.id, c.nome, c.lealdade, p.id, p.status, p.cliente_id, pr.id, pr.nome, pr.tipo, pr.preco, pr.pts_de_lealdade FROM produtos_pedidos pp 
+    INNER JOIN produtos pr ON pp.produto_id = pr.id 
+    INNER JOIN pedidos p ON pp.pedido_id = p.id
+    INNER JOIN clientes c ON p.cliente_id = c.id
+WHERE pp.pedido_id = 6;
 
 -- Atualização
 
