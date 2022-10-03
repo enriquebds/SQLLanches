@@ -56,8 +56,13 @@ UPDATE clientes
       c.nome)
 WHERE
   id = 6
-  
+
 -- Deleção
+
+DELETE FROM
+  clientes
+WHERE
+  nome = 'Marcelo'
 
 -- 1)
 
